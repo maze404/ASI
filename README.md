@@ -2,6 +2,10 @@
 
 Das "Automatic Setup Installer" Skript
 
+# DAS GUI PROJEKT:
+Ich würde gerne eine GUI für mein Skript entwickeln, daher gibt es nun den zweiten Branch namens GUI. Das grafische Interface funktioniert zwar derzeit, jedoch gibt es noch viele Bugs und keine multithreading Implementierung, weshalb das Skript manchmal aussieht als würde es hängen.
+Das Projekt benötigt noch sehr viel Arbeit!
+
 ## Benutzung:
 Repository als .zip Archiv herunterladen, extrahieren und an einem frei wählbaren Ort die start.bat ausführen.
 Das Skript kopiert sich automatisch nach C:\temp und läuft nach dem start von dort aus!
