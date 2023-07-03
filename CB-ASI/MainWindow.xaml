@@ -1,0 +1,29 @@
+﻿<Window x:Class="CB_ASI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CB_ASI"
+        mc:Ignorable="d"
+        Title="CB-IT Automatic Installer" Height="450" Width="450">
+    <Grid Height="440" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="checkInstallSoftware" Content="Installation der standart Programme" HorizontalAlignment="Left" Margin="22,37,0,0" VerticalAlignment="Top" Height="15" Width="211" />
+        <TextBlock HorizontalAlignment="Left" Margin="22,52,0,0" TextWrapping="Wrap" Text="Installiert Firefox, VLC, 7zip, Java, Teamviewer, Adobe Reader DC, Notepad++ und OpenVPN" VerticalAlignment="Top" FontSize="10" Height="13" Width="405"/>
+        <CheckBox x:Name="checkNvidiaDriver" Content="Installation des Nvidia Grafikkarten Treibers" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top" Height="15" Width="249" />
+        <CheckBox x:Name="checkOffice365" Content="Installation von Microsoft Office 365" HorizontalAlignment="Left" Margin="22,90,0,0" VerticalAlignment="Top" Height="15" Width="212" />
+        <CheckBox x:Name="checkRMM" Content="Installation des N-Able RMM Agents" HorizontalAlignment="Left" Margin="22,110,0,0" VerticalAlignment="Top" Height="15" Width="213" />
+        <CheckBox x:Name="checkEnergySetting" Content="Anpassen des Energiesparmodus" HorizontalAlignment="Left" Margin="22,156,0,0" VerticalAlignment="Top" Height="15" Width="194" />
+        <Label Content="Grundliegende Installationen" Margin="10,10,10,0" VerticalAlignment="Top" FontWeight="Bold" Background="Black" Foreground="White" Height="26"/>
+        <Label Content="Weitere Anpassungen" Margin="10,130,10,0" VerticalAlignment="Top" FontWeight="Bold" Background="Black" Foreground="White" Height="26"/>
+        <CheckBox x:Name="checkInstallFont" Content="Einrichtung der standart Schriftart (nur BPR)" HorizontalAlignment="Left" Margin="22,176,0,0" VerticalAlignment="Top" Height="15" Width="251" />
+        <CheckBox x:Name="checkNetworkShare" Content="Anbindung der Netzlaufwerke (nur BPR)" HorizontalAlignment="Left" Margin="22,196,0,0" VerticalAlignment="Top" Height="15" Width="231" />
+        <CheckBox x:Name="checkEverything" Content="Hier klicken, um alles auszuwählen!" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top"  FontWeight="Bold" IsChecked="{Binding ElementName=checkInstallSoftware, Mode=OneWay}" Height="15" Width="220"/>
+        <Button x:Name="buttonExecute" Margin="0,237,10,0" VerticalAlignment="Top" BorderBrush="Black" Background="Black" FontSize="14" Content="Ausführen" FontWeight="Bold" Foreground="White" Height="23" HorizontalAlignment="Right" Width="100"/>
+        <TextBox x:Name="boxConsole" Margin="10,281,10,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Height="88" BorderThickness="1,0,1,1"/>
+        <TextBox x:Name="boxConsoleTitle" Margin="10,264,10,0" TextWrapping="Wrap" BorderThickness="1,1,1,0" Height="17" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
